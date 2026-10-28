@@ -1,0 +1,59 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Install MoonBit
+        run: |
+          curl -fsSL https://cli.moonbitlang.com/install/unix.sh | bash
+          echo "$HOME/.moon/bin" >> "$GITHUB_PATH"
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+
+      - name: Update dependencies
+        run: moon update
+
+      - name: Format
+        run: moon fmt --check
+
+      - name: Check
+        run: moon check --deny-warn
+
+      - name: Unit tests
+        run: moon test --deny-warn
+
+      - name: End-to-end grading
+        run: |
+          chmod +x scripts/e2e.sh
+          ./scripts/e2e.sh
+
+  core-targets:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        target: [js, wasm, wasm-gc]
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Install MoonBit
+        run: |
+          curl -fsSL https://cli.moonbitlang.com/install/unix.sh | bash
+          echo "$HOME/.moon/bin" >> "$GITHUB_PATH"
+
+      - name: Update dependencies
+        run: moon update
+
+      - name: Core library tests
+        run: moon test . --target ${{ matrix.target }} --deny-warn
