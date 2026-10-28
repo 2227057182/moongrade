@@ -1,0 +1,25 @@
+{
+  "name": "MoonBit Fundamentals",
+  "description": "Compile the project and pass the public tests.",
+  "pass_score": 70,
+  "checks": [
+    {
+      "id": "compile",
+      "title": "Project compiles",
+      "kind": "check",
+      "points": 30,
+      "timeout_seconds": 60,
+      "required": true,
+      "hint": "Fix compilation errors before working on test failures."
+    },
+    {
+      "id": "tests",
+      "title": "Public tests",
+      "kind": "test",
+      "points": 70,
+      "timeout_seconds": 120,
+      "required": true,
+      "hint": "Read the first failing assertion and compare expected with actual."
+    }
+  ]
+}

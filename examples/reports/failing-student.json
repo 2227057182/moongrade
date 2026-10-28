@@ -1,0 +1,11 @@
+{
+  "assignment": "MoonBit Fundamentals",
+  "student_path": "examples/failing-student",
+  "score": 65,
+  "max_score": 100,
+  "passed": false,
+  "checks": [
+    {"id": "compile", "title": "Project compiles", "passed": true, "earned_points": 30, "possible_points": 30, "exit_code": 0, "timed_out": false, "duration_ms": 143, "feedback": []},
+    {"id": "tests", "title": "Public tests", "passed": false, "earned_points": 35, "possible_points": 70, "exit_code": 2, "timed_out": false, "duration_ms": 302, "feedback": ["测试未全部通过：从第一个失败用例开始修复，不要只看最终汇总。"]}
+  ]
+}

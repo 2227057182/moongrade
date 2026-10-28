@@ -1,0 +1,11 @@
+{
+  "assignment": "MoonBit Fundamentals",
+  "student_path": "examples/passing-student",
+  "score": 100,
+  "max_score": 100,
+  "passed": true,
+  "checks": [
+    {"id": "compile", "title": "Project compiles", "passed": true, "earned_points": 30, "possible_points": 30, "exit_code": 0, "timed_out": false, "duration_ms": 145, "feedback": []},
+    {"id": "tests", "title": "Public tests", "passed": true, "earned_points": 70, "possible_points": 70, "exit_code": 0, "timed_out": false, "duration_ms": 307, "feedback": []}
+  ]
+}

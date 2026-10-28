@@ -1,0 +1,11 @@
+{
+  "assignment": "MoonBit Fundamentals",
+  "student_path": "examples/compile-error-student",
+  "score": 0,
+  "max_score": 100,
+  "passed": false,
+  "checks": [
+    {"id": "compile", "title": "Project compiles", "passed": false, "earned_points": 0, "possible_points": 30, "exit_code": 1, "timed_out": false, "duration_ms": 112, "feedback": ["语法错误：检查括号、关键字、逗号和缺失的表达式。"]},
+    {"id": "tests", "title": "Public tests", "passed": false, "earned_points": 0, "possible_points": 70, "exit_code": 1, "timed_out": false, "duration_ms": 148, "feedback": ["语法错误：检查括号、关键字、逗号和缺失的表达式。"]}
+  ]
+}
