@@ -1,0 +1,21 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "2227057182/moongrade/runtime"
+
+import {
+  "2227057182/moongrade",
+}
+
+// Values
+pub fn cleanup_workspace(String) -> Unit
+
+pub fn prepare_workspace(String) -> String
+
+pub fn run_process(String, Array[String], String, Int32) -> @moongrade.ProcessResult raise @moongrade.AssessmentError
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+
+// Traits
