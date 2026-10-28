@@ -1,0 +1,7 @@
+* text=auto
+*.mbt text eol=lf
+*.mbti text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.sh text eol=lf
+scripts/e2e.sh text eol=lf

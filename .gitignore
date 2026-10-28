@@ -1,0 +1,14 @@
+.DS_Store
+_build/
+target/
+target
+.mooncakes/
+.moonagent/
+
+# Local single-student output from the end-to-end script
+examples/passing-report.html
+examples/passing-report.json
+examples/passing-report.md
+examples/failing-report.html
+examples/failing-report.json
+examples/failing-report.md
