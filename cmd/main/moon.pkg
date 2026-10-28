@@ -1,0 +1,9 @@
+import {
+  "2227057182/moongrade",
+  "2227057182/moongrade/runtime",
+  "moonbitlang/core/env",
+  "moonbitlang/x/fs",
+  "moonbitlang/x/sys",
+}
+
+pkgtype(kind: "executable")

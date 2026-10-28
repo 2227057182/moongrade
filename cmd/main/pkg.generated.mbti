@@ -1,0 +1,14 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "2227057182/moongrade/cmd/main"
+
+// Values
+
+// Errors
+type CliError
+
+// Types and methods
+type CliOptions
+
+// Type aliases
+
+// Traits
